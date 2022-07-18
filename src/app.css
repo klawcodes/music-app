@@ -1,0 +1,125 @@
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to right, #2c3333, #2c3639);
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+  bottom: 50px;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+img {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 30px;
+  left: 140px;
+  justify-content: center;
+}
+
+.song-title {
+  position: relative;
+  font-family: 'tulisan_xx';
+  right: 70px;
+  color: #e7f6f2;
+  font-size: 20px;
+  font-weight: 700;
+  width: 700px;
+  text-align: center;
+}
+
+.song-title span {
+  font-weight: 400;
+  font-style: bold;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #e7f6f2;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.play,
+.pause {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 25px;
+  margin: 0px 15px;
+  border-radius: 8px;
+  color: #e7f6f2;
+  background: #395b64;
+}
+
+.next,
+.prev {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin: 0px 15px;
+  border-radius: 6px;
+  color: #e7f6f2;
+  background: #395b64;
+}
+
+.playlist {
+  padding: 50px 0px;
+}
+
+.playlist h2 {
+  color: #e7f6f2;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.playlist .song {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.playlist .song:hover {
+  color: #a5c9ca;
+}
+
+.playlist .song.playing {
+  color: #e7f6f2;
+  background-image: linear-gradient(to right, #395b64, #a5c9ca);
+}
+
+@font-face {
+  font-family: tulisan_xx;
+  src: url(font/akira.otf);
+}
